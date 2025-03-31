@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Precios - FixDate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .pricing-header {
+            background-image: url('https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .popular-plan {
+            border: 2px solid #FF6B6B;
+            position: relative;
+            overflow: hidden;
+        }
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #FF6B6B;
+            color: white;
+            padding: 0.25rem 1rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            transform: rotate(45deg) translate(30%, -50%);
+            transform-origin: 100% 0;
+            width: 120px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header (Same as other pages) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-rose-500">FixDate</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-rose-500">Inicio</a>
+                <a href="services.html" class="text-gray-700 hover:text-rose-500">Servicios</a>
+                <a href="#" class="text-rose-500 font-semibold">Precios</a>
+                <a href="contact.html" class="text-gray-700 hover:text-rose-500">Contacto</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Pricing Header -->
+    <section class="pricing-header h-64 flex items-center justify-center text-white relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="text-center relative z-10 px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Nuestros Planes</h1>
+            <p class="text-lg md:text-xl">Paquetes adaptados a todas las necesidades y presupuestos</p>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-center mb-4">Plan Básico</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">€1,500</span>
+                        <span class="text-gray-500">/evento</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Consultoría inicial (2 horas)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Lista de proveedores recomendados</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1 revisión de planificación</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Checklist personalizado</li>
+                        <li class="flex items-center"><i class="fas fa-times text-gray-300 mr-2"></i> <span class="text-gray-400">Coordinación el día del evento</span></li>
+                        <li class="flex items-center"><i class="fas fa-times text-gray-300 mr-2"></i> <span class="text-gray-400">Gestión de invitados</span></li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300">Seleccionar</a>
+                </div>
+
+                <!-- Popular Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md popular-plan">
+                    <div class="popular-badge">POPULAR</div>
+                    <h3 class="text-xl font-bold text-center mb-4">Plan Premium</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">€3,500</span>
+                        <span class="text-gray-500">/evento</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Consultoría inicial (4 horas)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Selección y contratación de proveedores</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 3 revisiones de planificación</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Checklist y timeline detallado</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Coordinación el día del evento</li>
+                        <li class="flex items-center"><i class="fas fa-times text-gray-300 mr-2"></i> <span class="text-gray-400">Gestión de invitados</span></li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Seleccionar</a>
+                </div>
+
+                <!-- Deluxe Plan -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-center mb-4">Plan Deluxe</h3>
+                    <div class="text-center mb-6">
+                        <span class="text-4xl font-bold text-gray-800">€6,000</span>
+                        <span class="text-gray-500">/evento</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Consultoría inicial ilimitada</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Gestión completa de proveedores</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Revisiones ilimitadas</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Planificación detallada mes a mes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Coordinación completa el día del evento</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Gestión completa de invitados</li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center mb-12 text-gray-800">Comparación de Planes</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th class="pb-4 font-semibold text-gray-800">Característica</th>
+                            <th class="pb-4 font-semibold text-gray-800 text-center">Básico</th>
+                            <th class="pb-4 font-semibold text-gray-800 text-center">Premium</th>
+                            <th class="pb-4 font-semibold text-gray-800 text-center">Deluxe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 font-medium text-gray-800">Horas de consultoría</td>
+                            <td class="py-4 text-center">2</td>
+                            <td class="py-4 text-center">4</td>
+                            <td class="py-4 text-center">Ilimitadas</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 font-medium text-gray-800">Selección de proveedores</td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 font-medium text-gray-800">Contratación de proveedores</td>
+                            <td class="py-4 text-center"><i class="fas fa-times text-gray-300"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 font-medium text-gray-800">Coordinación día del evento</td>
+                            <td class="py-4 text-center"><i class="fas fa-times text-gray-300"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="py-4 font-medium text-gray-800">Gestión de invitados</td>
+                            <td class="py-4 text-center"><i class="fas fa-times text-gray-300"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-times text-gray-300"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 font-medium text-gray-800">Soporte por WhatsApp</td>
+                            <td class="py-4 text-center"><i class="fas fa-times text-gray-300"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                            <td class="py-4 text-center"><i class="fas fa-check text-green-500"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-rose-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">¿Necesitas algo personalizado?</h2>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Podemos crear un paquete a medida según tus necesidades específicas.</p>
+            <a href="contact.html" class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FixDate</h3>
+                    <p class="text-gray-400">Haciendo realidad los sueños de parejas desde 2010.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Precios</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +34 123 456 789</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@fixdate.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Madrid, España</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 FixDate. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle (same as other pages)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('shadow-md');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+        });
+    </script>
+</body>
+</html>
