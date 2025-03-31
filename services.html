@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - FixDate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .service-header {
+            background-image: url('https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-category {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header (Same as index.html) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-rose-500">FixDate</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-rose-500">Inicio</a>
+                <a href="#" class="text-rose-500 font-semibold">Servicios</a>
+                <a href="pricing.html" class="text-gray-700 hover:text-rose-500">Precios</a>
+                <a href="contact.html" class="text-gray-700 hover:text-rose-500">Contacto</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Service Header -->
+    <section class="service-header h-64 flex items-center justify-center text-white relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="text-center relative z-10 px-4">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Nuestros Servicios</h1>
+            <p class="text-lg md:text-xl">Todo lo que necesitas para tu boda perfecta</p>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <div class="container mx-auto px-6 py-16">
+        <!-- Planning Category -->
+        <section class="service-category rounded-lg p-8 mb-12 text-white">
+            <h2 class="text-2xl font-bold mb-6">Planificación de Bodas</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Planificación Completa</h3>
+                    <p class="mb-4">Gestión integral desde la idea inicial hasta el día de la boda.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Diseño conceptual</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Selección de proveedores</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Coordinación del evento</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Selección de Lugar</h3>
+                    <p class="mb-4">Encontramos el lugar perfecto para tu ceremonia y recepción.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Búsqueda personalizada</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Visitas guiadas</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Negociación de contratos</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Gestión de Invitados</h3>
+                    <p class="mb-4">Organización completa de tu lista de invitados.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Diseño de invitaciones</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Sistema RSVP online</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Asignación de mesas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vendors Category -->
+        <section class="service-category rounded-lg p-8 mb-12 text-white">
+            <h2 class="text-2xl font-bold mb-6">Proveedores</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Catering</h3>
+                    <p class="mb-4">Selección de los mejores servicios gastronómicos.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Pruebas de menú</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Opciones dietéticas</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Servicio de barra</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fotografía y Video</h3>
+                    <p class="mb-4">Captura los momentos más especiales de tu día.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Sesión pre-boda</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Cobertura completa</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Álbum de lujo</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white bg-opacity-90 p-6 rounded-lg text-gray-800">
+                    <div class="text-rose-500 text-3xl mb-3">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Entretenimiento</h3>
+                    <p class="mb-4">Música y animación para tu celebración.</p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Selección de DJ/banda</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Lista de canciones</li>
+                        <li class="flex items-center"><i class="fas fa-check text-rose-500 mr-2"></i> Animación adicional</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-rose-50 rounded-lg p-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">¿Listos para comenzar?</h2>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Contáctanos para una consulta gratuita y comencemos a planificar tu boda perfecta.</p>
+            <a href="contact.html" class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Contactar Ahora</a>
+        </section>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FixDate</h3>
+                    <p class="text-gray-400">Haciendo realidad los sueños de parejas desde 2010.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white transition">Precios</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +34 123 456 789</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@fixdate.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Madrid, España</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 FixDate. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle (same as index.html)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('shadow-md');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('space-x-0');
+        });
+    </script>
+</body>
+</html>
